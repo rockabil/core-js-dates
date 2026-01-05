@@ -257,11 +257,11 @@ function getNextFridayThe13th(date) {
   result.setDate(13);
 
   if (result <= date) {
-    result.setMonth(result.getDate + 1);
+    result.setMonth(result.getMonth + 1);
     result.setDate(13);
   }
 
-  while (result.getDate() !== 5) {
+  while (result.getDay() !== 5) {
     result.setMonth(result.getMonth() + 1);
     result.setDate(13);
   }
